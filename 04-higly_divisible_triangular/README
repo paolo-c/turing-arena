@@ -27,7 +27,7 @@ We can see that 28 is the first triangle number to have over five divisors.
 Write a function that receives a natural number N as input at that gives
 the smallest triangular number to have N divisors.
 
-You may want to refer to prime numbers table, tough there exists a solution
-that does not use it. Such solution may be slower but surely is more challenging
+You may want to refer to a prime numbers table, tough there exists a solution
+that does not use it. Such solution may be slower but more challenging
 
 
