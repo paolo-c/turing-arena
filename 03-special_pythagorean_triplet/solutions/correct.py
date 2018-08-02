@@ -1,3 +1,4 @@
+# evaluation_assert data["goals"]["correct"]
 def Find(N):
 	global V
 	V=[-1,-1,-1]
@@ -8,7 +9,7 @@ def Find(N):
 				break
 
 			if a*a+b*b==c*c:
-				V=[a,b,c]
+				V=[min([a,b]),max([a,b]),c]
 
 def get_element(i):
     return V[i]

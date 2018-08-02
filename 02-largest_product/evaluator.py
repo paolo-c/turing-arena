@@ -1,3 +1,4 @@
+# evaluation_assert data["goals"]["correct"]
 from turingarena import *
 
 all_passed = True
