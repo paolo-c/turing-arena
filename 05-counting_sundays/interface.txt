@@ -1,0 +1,14 @@
+function num_days(d,m,y);
+function num_sundays(d,m,y);
+
+main {
+	read d;
+	read m;
+	read y;
+    
+	call n = num_days(d,m,y);
+	write n;
+	
+	call s = num_sundays(d,m,y);
+	write s;
+}

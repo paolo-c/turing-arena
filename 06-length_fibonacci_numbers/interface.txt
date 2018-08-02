@@ -1,0 +1,9 @@
+function num_digits(N);
+
+main {
+	read N;
+    
+	call n = num_digits(N);
+	write n;
+	
+}

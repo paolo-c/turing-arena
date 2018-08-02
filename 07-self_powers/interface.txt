@@ -1,0 +1,9 @@
+function S_n(N);
+
+main {
+	read N;
+    
+	call n = S_n(N);
+	write n;
+	
+}

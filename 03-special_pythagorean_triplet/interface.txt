@@ -1,0 +1,19 @@
+//This shall create a vector of length 3 containg the Pythagorean triplet,
+//the last elment must be the greatest
+// The input N is as described in the file README
+procedure Find(N);
+
+// This function shall return the i-th element of 
+// the vector created by the procedure Find()
+function get_element(i);
+
+main {
+
+    read N;
+    call Find(N);
+    
+    for i to 3 {
+        call ans = get_element(i);
+        write ans;
+    }
+}

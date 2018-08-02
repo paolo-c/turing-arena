@@ -1,0 +1,7 @@
+function find(N);
+
+main {
+    read N;
+    call s = find(N);
+    write s;
+}

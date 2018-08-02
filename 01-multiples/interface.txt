@@ -1,0 +1,7 @@
+function sum(N);
+
+main {
+    read N;
+    call s = sum(N);
+    write s;
+}

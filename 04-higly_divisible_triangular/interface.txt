@@ -1,0 +1,7 @@
+function num(N);
+
+main {
+    read N;
+    call s = num(N);
+    write s;
+}

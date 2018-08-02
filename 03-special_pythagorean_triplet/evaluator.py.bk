@@ -1,0 +1,20 @@
+from turingarena import *
+
+all_passed = True
+ans=[3,4,5]
+try:
+	with run_algorithm(submission.source) as process:
+		process.procedures.find()
+		for i in range(0,3):
+			c[i] = process.functions.get_number(i)
+			if c[i] != ans[i]:
+				all_passed= False
+except AlgorithmError as e:
+	all_passed = False
+
+if all_passed:
+	print(f"{c[0]} , {c[1]} , {c[2]}  --> Correct!")
+else:
+	print(f"{c[0]} , {c[1]} , {c[2]}  --> Wrong!")
+
+evaluation.data(dict(goals=dict(correct=all_passed)))
