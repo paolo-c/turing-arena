@@ -2,8 +2,7 @@
 
 def compute_pi():
 
-	N=100
-	pi=0.
+	N=10
 	a=1./5.
 	b=1./239.
 	a2=a*a
