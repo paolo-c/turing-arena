@@ -1,0 +1,13 @@
+function compute_pi();
+
+function get_digit(i);
+
+main {
+
+    call n = compute_pi();
+    write n;
+    for i to n {
+        call ans = get_digit(i);
+        write ans;
+    }
+}
