@@ -10,7 +10,12 @@ def theoric(h,v,theta):
 	t=(vy+math.sqrt(vy**2 + 2*g*h))/g
 	return v*math.cos(theta/180*math.pi)*t
 	
-
+def is_wrong(teo,res):
+	if abs(teo-res)<=1:
+		return False
+	if abs(teo-res)/teo<5/100:	
+		return False
+	return True
 
 all_passed = True
 for _ in range(10):
@@ -32,7 +37,7 @@ for _ in range(10):
 		theta=85
 		h=70
 		v=25
-	if h==0 and theta<=0:
+	if h<=1 and theta<=0:
 		h=10
 		
 		
@@ -48,9 +53,9 @@ for _ in range(10):
 			gittata=process.functions.get_x()
 			teo=theoric(h,v,theta)
 			print(gittata, end='')
-			if abs(gittata-teo)/teo>1:
+			if is_wrong(teo,gittata):
 				all_passed = False
-				print(f" ---> Wrong!, correct value {teo}")
+				print(f"{gittata} ---> Wrong!, correct value {teo}")
 			else:
 				print(" ---> Ok")
 	except AlgorithmError as e:

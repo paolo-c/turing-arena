@@ -2,9 +2,13 @@
 import math
 
 def sin(x):
+	if x==0:
+		return 0
 	return math.sin(x/180*math.pi)
 
 def cos(x):
+	if abs(x)==90:
+		return 0
 	return math.cos(x/180*math.pi)
 
 def set_initial_values(h,v,theta):
@@ -18,8 +22,11 @@ def set_initial_values(h,v,theta):
 	vy=v*sin(theta)
 	vx=v*cos(theta)
 	
-	dt=v/100.
-	
+	if vx*vy==0:
+		dt=v/1000.
+	else:
+		dt=min(abs(vx),abs(vy))/1000.
+
 	return
 	
 
@@ -38,19 +45,3 @@ def is_landed():
 	
 def get_x():
 	return int(x+0.5)
-
-
-
-def theoric(h,v,theta):
-	g=9.8
-	vy=v*sin(theta)
-	t=(vy+math.sqrt(vy**2 + 2*g*h))/g
-	return v*cos(theta)*t
-	
-def simul(h,v,theta):
-	set_initial_values(h,v,theta)
-	while is_landed()==False:
-		go_forward()
-	return get_x()
-
-

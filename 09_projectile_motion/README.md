@@ -16,11 +16,11 @@ https://en.wikipedia.org/wiki/Euler_method
 You will receive **h**, **v** and **theta** as input:
 * **h** takes integer values from  0 to 70
 * **v** takes integer values from 10 to 25
-* **theta** is given in degrees, is an integer and varies from -90 to 90
+* **theta** is given in degrees, is an integer and cd . from -90 to 90
 
 **HINT:** The choose of the size of the integration step is crucial, take it too small  and 
 either you have numerical errors or the program takes too much time; take it too big and the
 approximation of your integration methods does not hold.
-Considering the ranges of **h** and **v**, a good one maybe **v/100**
+
 
 
