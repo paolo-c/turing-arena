@@ -1,0 +1,28 @@
+// this shall set the initial position and the components of the initial velocity
+// you may want to decide here the size of the integration step
+procedure set_initial_values(h,v,theta);
+
+// here is where the integration method is implemented 
+procedure go_forward();
+
+// this shall returns 1 if it is landed, 0 otherwise 
+function is_landed();
+
+//this shall return the horizontal position from the starting point
+function get_x();
+
+main {
+
+	read h,v,theta;
+	call set_initial_values(h,v,theta);
+	loop{
+		call go_forward();
+		call landed = is_landed();
+		write landed;
+		if landed {
+			break;
+		}
+	}
+	call range = get_x();
+	write range;
+}
