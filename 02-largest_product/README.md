@@ -1,12 +1,6 @@
-##############################################################################
-#                                                                            #
-#                             31/07/2018                                     #
-#                       LARGEST PRODUUCT IN A SERIES                         #
-#                                                                            #
-#            Original problem form Project Euler, problem 8                  #
-#                                                                            #
-#                                                                            #
-##############################################################################
+#                       LARGEST PRODUUCT IN A SERIES                         
+#                             31/07/2018                                     
+
 
 Consider the following 1000 digits number
 
@@ -36,4 +30,5 @@ greatest product are 9 × 9 × 8 × 9 = 5832.
 Write a function that takes an integer N as input and returns the greatest 
 product of a subseries of length N.
 
-
+The original problem is from project euler
+https://projecteuler.net/problem=8

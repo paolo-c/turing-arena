@@ -1,6 +1,6 @@
-#                                                                            
-#                             10/09/2018                                    
 #                            DIGITS OF PI                                    
+#                             10/09/2018                                    
+
 
 
 Computing the ratio between the circumference and diameter of a circle is 

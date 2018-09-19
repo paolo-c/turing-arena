@@ -1,12 +1,6 @@
-##############################################################################
-#                                                                            #
-#                             02/08/2018                                     #
 #                           COUNTING DAYS                                    #
-#                                                                            #
-#            Original problem form Project Euler, problem 19                 #
-#                                                                            #
-#                                                                            #
-##############################################################################
+#                             02/08/2018                                     #
+
 
 You are given the following information, but you may prefer to do some research for yourself.
 
@@ -31,3 +25,6 @@ how many Sundays fell on the first of the month from 01/01/1900 to d/m/y
 
 HINT: You may want to write a function isleap(y) that tells you wheter an year
 is leap or not
+
+Original problem from project euler
+https://projecteuler.net/problem=19
