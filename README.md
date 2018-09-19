@@ -1,4 +1,4 @@
-#Selection of problems for Turing Arena.
+# Selection of problems for Turing Arena.
 The problems are presented in an order that I consider from the easiest to the most difficult.
 If you are not familiar with Turing Arena, I strongly suggest to start with the first one.
 However if you are stocked into a problem, feel free to skip it!
