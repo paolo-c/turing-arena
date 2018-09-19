@@ -1,0 +1,9 @@
+function count_checkouts(N);
+
+main {
+	read N;
+    
+	call n = count_checkouts(N);
+	write n;
+	
+}
